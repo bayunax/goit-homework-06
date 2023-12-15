@@ -54,14 +54,28 @@ body {
 }
 
 .container {
-  width: 1158px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
-
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
 .section {
   padding-top: 60px;
   padding-left: 60px;
+}
+@media screen and (max-width: 1157px) {
+  .section {
+    padding: 96px 0;
+  }
 }
 
 /*--------- /common style ------------------*/
@@ -167,6 +181,7 @@ body {
 .adress-link:focus {
   color: #404bbf;
 }
+
 /*--------------- /header styles ----------------*/
 
 /*---------------- main styles-------------------- */

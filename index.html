@@ -51,13 +51,11 @@
             </li>
           </ul>
         </address>
-        <div class="container">
-          <button class="mobile-botton-header" type="button">
-            <svg class="mobile-botton-header-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-menu"></use>
-            </svg>
-          </button>
-        </div>
+        <button class="mobile-botton-header" type="button">
+          <svg class="mobile-botton-header-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -139,6 +137,10 @@
             <li class="second-section-link backcolor-second">
               <img
                 class="img-second-section"
+                srcset="
+                  ./images/mobile/Mark.jpg    1x,
+                  ./images/mobile/Mark@2x.jpg 2x
+                "
                 src="./images/TeamCard1.jpg"
                 width="264"
                 height="260"
@@ -183,6 +185,10 @@
             <li class="second-section-link backcolor-second">
               <img
                 class="img-second-section"
+                srcset="
+                  ./images/mobile/Tom.jpg    1x,
+                  ./images/mobile/Tom@2x.jpg 2x
+                "
                 src="./images/TeamCard2.jpg"
                 width="264"
                 height="260"
@@ -227,7 +233,11 @@
             <li class="second-section-link backcolor-second">
               <img
                 class="img-second-section"
-                src="./images/TeamCard3.jpg"
+                srcset="
+                  ./images/mobile/Camila.jpg    1x,
+                  ./images/mobile/Camila@2x.jpg 2x
+                "
+                src="./images/TeamCard4.jpg"
                 width="264"
                 height="260"
                 alt="Camila Garcia.Marketing"
@@ -271,7 +281,11 @@
             <li class="second-section-link backcolor-second">
               <img
                 class="img-second-section"
-                src="./images/TeamCard4.jpg"
+                srcset="
+                  ./images/mobile/Daniel.jpg    1x,
+                  ./images/mobile/Daniel@2x.jpg 2x
+                "
+                src="./images/TeamCard3.jpg"
                 width="264"
                 height="260"
                 alt="Daniel Wilson.UI Designer"
@@ -315,6 +329,8 @@
           </ul>
         </div>
       </section>
+      <!--------------------------- /second section ----------------------------->
+
       <!--------------------------- third-section ----------------------------------->
       <section class="section-porfolio section">
         <div class="container">
@@ -322,12 +338,30 @@
           <ul class="list third-setion-list">
             <li class="third-section-link">
               <div class="overlay">
-                <img
-                  src="./images/banking.jpg"
-                  width="360"
-                  height="300"
-                  alt="Banking App"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/banking-desk.jpg    1x,
+                      ./images/desktop/banking-desk@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/Banking-tab1.jpg    1x,
+                      ./images/tablet/Banking-tab1@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/Banking-mob1.jpg    1x,
+                      ./images/mobile/Banking-mob1@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/banking-desk.jpg" alt="Banking" />
+                </picture>
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -341,12 +375,30 @@
             </li>
             <li class="third-section-link">
               <div class="overlay">
-                <img
-                  src="./images/payment.jpg"
-                  width="360"
-                  height="300"
-                  alt="Cashless Payment"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/Paiment-desk2.jpg    1x,
+                      ./images/desktop/Paiment-desk2@2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/Banking-tab1.jpg    1x,
+                      ./images/tablet/Banking-tab1@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/Banking-mob1.jpg    1x,
+                      ./images/mobile/Banking-mob1@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img src="./images/desktop/banking-desk.jpg" alt="Banking" />
+                </picture>
                 <p class="text-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -439,7 +491,8 @@
         </div>
       </section>
     </main>
-    <!----------------------------------- footer section -------------------------------------->
+    <!-- --------------------------------- footer section -->
+
     <footer class="footer-back section">
       <div class="footer-containar container">
         <div class="footer-social-icons">
@@ -453,7 +506,7 @@
         </div>
         <div class="footer-icons">
           <p class="text-social-footer">Social media</p>
-          <ul class="social-links-footer containar-footer">
+          <ul class="social-links-footer containar-footer list">
             <li class="socil-item-footer">
               <a class="social-icons-footer" href="">
                 <svg class="social-icons-items" width="24" height="24">
@@ -510,7 +563,7 @@
 
     <!------------------- backdrop section ------------------------------->
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-class-button" type="button">
           <svg
@@ -638,6 +691,81 @@
           </div>
           <button class="review-form-submit-button" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <!-------------------------- Mobile menu ---------------------------------->
+    <div class="mobile-menu-wrapper">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-navigation">
+          <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link mobile-menu-link-studio link" href=""
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <address class="">
+            <ul class="list adress-mobile-menu">
+              <li>
+                <a class="link adress-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link adress-link adress-link-tel"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mobile-menu-social">
+            <ul class="list mobile-menu-social-list">
+              <li class="mobile-menu-social-item">
+                <a class="link mobile-social-link" href="">
+                  <svg class="icon-mobile-social-list" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a class="link mobile-social-link" href="">
+                  <svg class="icon-mobile-social-list" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a class="link mobile-social-link" href="">
+                  <svg class="icon-mobile-social-list" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a class="link mobile-social-link" href="">
+                  <svg class="icon-mobile-social-list" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>

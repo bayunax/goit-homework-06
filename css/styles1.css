@@ -1,0 +1,230 @@
+/* --------------------common files ---------------------------------*/
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+.container {
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
+.section {
+  padding: 120px 0;
+}
+@media screen and (max-width: 1157px) {
+  .section {
+    padding: 96px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+}
+/*--------------------- /common files ----------------------------------*/
+
+/*-------------------------- mobile header style-------------------------------- */
+.menu {
+  display: none;
+}
+.list-adress {
+  display: none;
+}
+.page-logo {
+  color: #4d5ae5;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-studio {
+  color: #2e2f42;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.mobile-botton-header {
+  background-color: transparent;
+  border: none;
+}
+.container-headar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-headar {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.mobile-menu-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: translateX(100%);
+}
+.mobile-menu-wrapper.is-open {
+  transform: translateX(0%);
+  transition: transform 250ms linear;
+}
+.mobile-menu-container {
+  position: relative;
+}
+.mobile-menu-close-btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  top: 24px;
+  right: 0;
+}
+/* -------------/mobile header style---------------------------- */
+
+/*--------------- tablet header style -----------------------------*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/*---------------- /tablet header style -----------------------------*/
+
+/*----------------- desktop header style -----------------------------*/
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
+/*-------------------- /desktop header style--------------------------- */
+
+/*-------------------- mobile first-section style -------------------------------*/
+
+.containar-first {
+  display: block;
+}
+
+.list-title-first {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.first-section-title {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.first-section-link {
+  width: calc((100% - 72px) / 4);
+  list-style: none;
+}
+.first-section-link:last-child {
+  margin-right: 0;
+}
+
+.icons-section-first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  fill: #2e2f42;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
+.first-section-text {
+  color: #434455;
+  /* Body */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  /* 150% */
+  letter-spacing: 0.02em;
+}
+@media screen and (max-width: 1157px) {
+  .icons-section-first {
+    display: none;
+  }
+}

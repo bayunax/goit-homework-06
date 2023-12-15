@@ -1038,6 +1038,7 @@ body {
   .container-headar {
     min-width: 768px;
     display: flex;
+    align-items: center;
   }
 
   .main-nav {
@@ -1116,8 +1117,6 @@ body {
     gap: 12px;
     /* padding-top: 24px;
     padding-bottom: 24px; */
-    margin-bottom: 16px;
-    margin-top: 16px;
   }
 
   .adress-link {
